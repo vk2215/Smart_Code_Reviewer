@@ -19,7 +19,7 @@ function App() {
   }, [code, review]);
 
   async function reviewCode() {
-    const response = await axios.post("https://smart-code-reviewer.onrender.com", {
+    const response = await axios.post("https://smart-code-reviewer.onrender.com/ai/get-review", {
       code,
     });
 
